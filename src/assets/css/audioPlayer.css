@@ -1,0 +1,43 @@
+:root {
+  --range-progress: 0;
+  --border-color: "#007bff";
+  --slider-color: "#fff";
+}
+
+input[type="range"] {
+  --range-progress: 50%;
+  /* ... */
+}
+
+input[type="range"]::before {
+  /* ... */
+  background: #f50;
+  width: var(--range-progress);
+  /* ... */
+}
+
+.half-border {
+  position: relative;
+}
+
+.half-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: var(--range-progress);
+  height: 2px;
+  /* Adjust the height as needed */
+  background-color: var(--border-color);
+}
+
+input[type="range"][orient="vertical"] {
+  appearance: slider-vertical;
+  width: 8px;
+  height: 175px;
+  padding: 0 5px;
+  color: var(--slider-color);
+  background-color: var(--border-color);
+  outline: none;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="1440"
+   height="1440"
+   viewBox="0 0 1440 1440"
+   sodipodi:docname="Shoorah_Shape_5.ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16">
+      <path
+         d="M 0,1080 H 1080 V 0 H 0 Z"
+         id="path14" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="Shoorah_Shape_5"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,1440)">
+    <g
+       id="g10">
+      <g
+         id="g12"
+         clip-path="url(#clipPath16)">
+        <g
+           id="g18"
+           transform="translate(20.5669,555.1917)">
+          <path
+             d="m 0,0 c 1.911,33.944 16.252,62.51 40.76,85.815 83.057,78.94 165.425,158.412 249.527,236.072 47.931,44.306 98.857,85.658 149.211,127.403 57.132,47.4 124.252,46.493 179.826,-3.034 135.383,-120.665 263.2,-248.758 383.373,-384.278 49.35,-55.694 48.148,-120.567 -3.113,-174.153 C 875.372,-242.041 743.439,-364.755 602.225,-478.349 539.833,-528.506 472.93,-526.3 413.159,-472.97 277.107,-351.556 149.999,-222.301 31.422,-85.756 9.869,-60.934 -0.552,-32.171 0,0"
+             style="fill:#c9c9c9;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path20" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

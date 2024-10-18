@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "P22Mackinac";
+  src: url(../fonts/P22MackinacPro-Medium.ttf);
+} */
+
+:root {
+  --scroll-color: "#007bff";
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/P22MackinacPro-Book_25.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/P22MackinacPro-BookItalic_15.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/P22MackinacPro-Medium_26.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/P22MackinacPro-MedItalic_18.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/P22MackinacPro-Bold_16.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/P22MackinacPro-BoldItalic_11.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/P22MackinacPro-ExtraBold_12.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/P22MackinacPro-ExBoldItalic_17.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work sans";
+  scroll-behavior: smooth;
+
+  button {
+    outline: none !important;
+  }
+}
+
+.P22Mackinac {
+  font-family: "MyFont" !important;
+}
+
+html {
+  background: #fff;
+  overflow: auto !important;
+  padding-right: unset !important;
+  position: unset !important;
+}
+
+.sidebar-container::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 21px;
+  height: 3px;
+}
+
+.sidebar-container::-webkit-scrollbar-track {
+  background: #18202f !important;
+}
+
+/* Handle */
+.sidebar-container::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: linear-gradient(89.99deg,
+      #3a47ab 0.01%,
+      #4a56db 98.9%) !important;
+}
+
+/* Handle on hover */
+.sidebar-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(89.99deg,
+      #3a47ab 0.01%,
+      #4a56db 98.9%) !important;
+}
+
+.demo-editor {
+  height: 400px !important;
+  padding: 0 10px;
+  border: 1px solid #f1f1f1;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.disabled-editor {
+  background: #fafafa;
+  cursor: default;
+}
+
+.disabled-toolbar {
+  display: none !important;
+}
+
+@media screen and (max-width: 576px) {
+  .demo-editor {
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .demo-editor {
+    min-height: 150px;
+  }
+}
+
+.rh5v-PlayPause_component svg {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
+
+.rh5v-PlayPause_component:hover {
+  background-color: unset !important;
+}
+
+.rh5v-Volume_component svg {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
+
+.rh5v-Fullscreen_component svg {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
+
+.rh5v-Fullscreen_component:hover {
+  background-color: unset !important;
+}
+
+.rh5v-DefaultPlayer_component,
+.rh5v-DefaultPlayer_video {
+  border: 1.8px solid rgba(0, 0, 0, 0.7);
+  /*border-radius: 15px;*/
+}
+
+.rh5v-DefaultPlayer_controls {
+  /*border-bottom-left-radius: 15px;*/
+  /*border-bottom-right-radius: 15px;*/
+}
+
+.rdrDefinedRangesWrapper {
+  display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+/*FILTER SCROLL*/
+
+.filter-container::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 21px;
+  height: 3px;
+}
+
+.filter-container::-webkit-scrollbar-track {
+  background: #d7d7da !important;
+}
+
+/* Handle */
+.filter-container::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: linear-gradient(89.99deg,
+      #b4b4b4 0.01%,
+      #b4b4b4 98.9%) !important;
+}
+
+/* Handle on hover */
+.filter-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(89.99deg,
+      #b4b4b4 0.01%,
+      #b4b4b4 98.9%) !important;
+}
+
+.DraftEditor-editorContainer .public-DraftEditor-content h1 {
+  font-size: 2em !important;
+  font-weight: bolder !important;
+}
+
+.DraftEditor-editorContainer .public-DraftEditor-content h2 {
+  font-weight: bolder !important;
+  font-size: 1.5em !important;
+}
+
+.DraftEditor-editorContainer .public-DraftEditor-content h3 {
+  font-weight: bolder !important;
+  font-size: 1.7em !important;
+}
+
+.DraftEditor-editorContainer .public-DraftEditor-content h4 {
+  font-size: 1em !important;
+  font-weight: bolder !important;
+}
+
+.DraftEditor-editorContainer .public-DraftEditor-content h5 {
+  font-size: 0.83em !important;
+  font-weight: bolder !important;
+}
+
+.DraftEditor-editorContainer .public-DraftEditor-content h6 {
+  font-size: 0.67em !important;
+  font-weight: bolder !important;
+}
+
+.selected {
+  background: lightgray;
+  border-radius: 15px;
+  padding: 12px;
+}
+
+.unselected {
+  padding: 12px;
+  opacity: 0.3;
+}
+
+.chart canvas {
+  height: 163px !important;
+}
+
+.webkit_in {
+  display: -webkit-inline-box;
+}
+
+.webkit_out {
+  display: table-caption;
+}
+
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left,
+.apexcharts-legend.apx-legend-position-top.apexcharts-align-left,
+.apexcharts-legend.apx-legend-position-right,
+.apexcharts-legend.apx-legend-position-left {
+  display: none !important;
+}
+
+/* CUSTOM COMMON RADIO BUTTON STYLE */
+input[type="radio"] {
+  accent-color: #434fc5;
+}
+
+.ckeditor_outer {
+  height: 500px !important;
+}
+
+.cke_contents {
+  height: 390px !important;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1320px) {
+  .dashboard_sec2_custom {
+    width: 55%;
+    margin-right: 20px;
+  }
+}
+
+.slick-arrow {
+  border-radius: 9999px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #313b6b !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scrollbar {
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
+}
+
+.style-scroll::-webkit-scrollbar {
+  width: 5px;
+  margin-right:15px;
+  /* for Chrome, Safari, and Opera */
+}
+
+.style-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+.style-scroll::-webkit-scrollbar-thumb {
+  background: var(--scroll-color);
+  border-radius: 5px;
+}
+
+/* 
+nav.slick__arrow,
+ul.slick-dots {
+  display: none !important;
+} */
+
+.placeholderText::placeholder {
+  color: #000;
+  font-family: "P22Mackinac" !important;
+}
+
+/* .slick-slider {
+  height: 45vh !important;
+} */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-image {
+  animation: fadeIn 3s;
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-player {
+  display: block;
+  background: black;
+}
+
+.video-player.show-controls::-webkit-media-controls-start-playback-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.2s;
+}
+
+.video-player.show-controls::-webkit-media-controls-play-button {
+  display: none;
+}
+
+.video-player.show-controls::-webkit-media-controls-enclosure {
+  opacity: 1;
+}
+
+.video-player.show-controls::-webkit-media-controls-panel {
+  opacity: 1;
+}
+
+.video-player.show-controls::-webkit-media-controls-timeline {
+  opacity: 1;
+}
+
+.video-player.show-controls::-webkit-media-controls-current-time-display {
+  display: block;
+  opacity: 1;
+}
+
+.video-player.show-controls::-webkit-media-controls-time-remaining-display {
+  display: block;
+  opacity: 1;
+}
+
+.video-player.show-controls::-webkit-media-controls-volume-slider {
+  display: block;
+  opacity: 1;
+}
+
+.video-player.show-controls::-webkit-media-controls-volume-slider-container {
+  display: block;
+  opacity: 1;
+}
+
+.video-player.show-controls::-webkit-media-controls-volume-mute-button {
+  display: block;
+  opacity: 1;
+}
+
+.video-player.show-controls::-webkit-media-controls-mute-button {
+  display: block;
+  opacity: 1;
+}
+
+.video-player.show-controls::-webkit-media-controls-fullscreen-button {
+  display: block;
+  opacity: 1;
+}
+
+/* shuru emotion carousel */
+
+/* .css-1fzpoyk:nth-child(1) {
+  transform: translateY(-55%) translateX(-33.3333%) scale(0.7) !important;
+}
+
+.css-1fzpoyk:nth-child(2) {
+  transform: translateY(-45%) translateX(-33.3333%) scale(1) !important;
+  height: 30rem !important;
+}
+
+.css-1fzpoyk:nth-child(3) {
+  transform: translateY(-55%) translateX(-33.3333%) scale(0.7) !important;
+} */
+
+.fJOMqa {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.carousel-wrapper * {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.rec.rec-arrow {
+  border-radius: 0 !important;
+  color: #000 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+  border-radius: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+}
+
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+  visibility: hidden !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* disable default outline on focused items */
+/* add custom outline on focused items */
+.rec-carousel-item:focus {
+  outline: none !important;
+  border: none !important;
+
+  box-shadow: inset 0 0 1px 1px red !important;
+}
+
+button * {
+  outline: none !important;
+}
+
+.spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+}
+
+.spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.spinner:before,
+.spinner:after {
+  position: absolute;
+  content: "";
+}
+
+.spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: undefined;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+
+.spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: undefined;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.botMessage {
+  position: relative;
+  color: hsl(0, 0%, 68%);
+  border-right: 2px solid hsl(0, 0%, 80%);
+  animation:
+    typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.pricing {
+  transition: 0.5s;
+
+  /* &:nth-child(1) {
+    transform: translateX(90px);
+    z-index: -1;
+  } */
+
+  &:nth-child(2) {}
+
+  /* 
+  &:nth-child(3) {
+    transform: translateX(-90px);
+    z-index: -1;
+
+  } */
+}
+
+.ant-slider-track {
+  background-color: transparent !important;
+  border-radius: 2px;
+  color: white !important;
+}
+
+.slider-container {
+  color: white !important;
+}
+
+.ant-slider-dot {
+  display: hidden !important;
+  width: 8px;
+  height: 8px;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  pointer-events: auto;
+}
+
+.ant-slider-mark-text {
+  color: white !important;
+  font-family: "P22Mackinac" !important;
+  font-size: 1rem !important;
+}
+
+@media (min-width: 1024px) {
+  .ant-slider-mark-text {
+    color: white !important;
+    font-family: "P22Mackinac" !important;
+    font-size: 1.5rem !important;
+  }
+}
+
+.ant-slider-handle::after {
+  box-shadow: none !important;
+}
+
+.custom-thumb {
+  width: 20px;
+  /* Set the width of your custom thumb */
+  height: 20px;
+  /* Set the height of your custom thumb */
+  /* Use your custom SVG as the background */
+  background-size: cover;
+  /* Adjust to your image size if necessary */
+  cursor: pointer;
+  /* Set cursor style to pointer for interaction */
+  border: none;
+  /* Remove any default border styles */
+  /* Add other custom styling as needed */
+}
+
+.swiper-button-next {
+  background-color: red !important;
+  position: absolute !important;
+  right: -1rem !important;
+}
